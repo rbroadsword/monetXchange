@@ -6,5 +6,10 @@ import './css/styles.css';
 
 
 $(document).ready(function() {
-
+  $('.monetForm').click(function() {
+    let coin = $('#currency').val(); 
+    let amount = parseInt($('#amount').val()); 
+    console.log("Coin selected is" + coin); 
+    console.log("Amount: " + amount); 
+  })
 }); 

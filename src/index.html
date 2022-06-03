@@ -7,22 +7,31 @@
   <title>monetXchange</title>
 </head>
 <body>
-  <div class="header">
-    <h1>monetXchange</h1>
-    <p>Gather up the coins and xchange while the gettin is good.</p>
-  </div>
-  <div class="userInfo">
-    <form class="monetForm">
-      <select name="currency" id="currency">
-        <option value="CLP">Chilean Peso</option>
-        <option value="THB">Thai Baht</option>
-        <option value="HTG">Haitian Gourde</option>
-        <option value="FJD">Fiji Dollar</option>
-        <option value="BTN">Bhutanese Ngultrum</option>
-      </select>
-      <label for="amount">Amount to convert in USD</label>
-      <input type="number" id="amount" required>
-    </form>
+  <div class="container">
+    <div class="header">
+      <h1>monetXchange</h1>
+      <p>Gather up the coins and xchange while the gettin is good.</p>
+    </div>
+    <div class="userInfo">
+      <form class="monetForm">
+        <select name="currency" id="currency">
+          <option value="CLP">Chilean Peso</option>
+          <option value="THB">Thai Baht</option>
+          <option value="HTG">Haitian Gourde</option>
+          <option value="FJD">Fiji Dollar</option>
+          <option value="BTN">Bhutanese Ngultrum</option>
+        </select>
+        <label for="amount">Amount to convert in USD</label>
+        <input type="number" id="amount" required>
+        <button class="btn-danger">Submit</button>
+      </form>
+    </div>
+    <div class="output">
+      <p>soak it up</p>
+    </div>
+    <div class="errorMsg">
+      <p>errrror</p>
+    </div>
   </div>
 </body>
 </html>
