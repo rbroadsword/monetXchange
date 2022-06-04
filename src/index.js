@@ -21,6 +21,11 @@ $(document).ready(function() {
     let amount = parseInt($('#amount').val()); 
     console.log("Coin selected is " + country); 
     console.log("Amount: " + amount);
+    if (amount <= 0) {
+      $('.output').hide(); 
+      $('.error').hide(); 
+      $('.invalidNumber').text(`Error! Enter a number greater than 0`); 
+    }
     Monet.getMonet(country, amount)
       .then(function(response) {
         getElements(response);
