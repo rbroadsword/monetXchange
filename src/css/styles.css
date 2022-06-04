@@ -21,9 +21,11 @@ body {
 .userInfo {
   background-image: url("../assets/img/xchange.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  width: 80%;
   padding: 2rem;
-  margin: 2rem;
+  margin: auto;
+  margin-top: 2rem;
   text-align: left;
   background-color:ivory;
   border: solid green;
