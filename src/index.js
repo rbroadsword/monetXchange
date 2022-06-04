@@ -22,12 +22,15 @@ $(document).ready(function() {
     event.preventDefault(); 
     let country = $('#currency').val(); 
     let amount = parseInt($('.amount').val()); 
+    clearForm(); 
     if (amount <= 0) {
       $('.output').hide(); 
       $('.error').hide(); 
       $('.invalidNumber').text(`Error! Enter a number greater than 0`); 
     }
     if (country === 'other'){
+      $('.output').hide(); 
+      $('.error').hide(); 
       $('.invalidCurrency').text(`Error! Please select a legitamite currency`); 
     }
     Monet.getMonet(country, amount)
