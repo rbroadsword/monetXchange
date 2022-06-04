@@ -20,9 +20,10 @@
           <option value="HTG">Haitian Gourde</option>
           <option value="FJD">Fiji Dollar</option>
           <option value="BTN">Bhutanese Ngultrum</option>
+          <option value="other">Other</option>
         </select>
         <label for="amount">Amount to convert in USD</label>
-        <input type="number" id="amount" required>
+        <input type="number" class="amount" required>
         <button class="btn-danger">Submit</button>
       </form>
     </div>
@@ -32,6 +33,7 @@
     </div>
     <div>
       <p><span class="invalidNumber"></span></p>
+      <p><span class="invalidCurrency"></span></p>
     </div>
     <div class="errorMsg">
       <p><span class="error"></span></p>
