@@ -8,9 +8,9 @@ import Monet from './js/function.js';
 function getElements(response){
   if (response.result === "success") {
     $('.conversionRate').text(`The coversion rate is: ${response.conversion_rate}`); 
-    $('.conversionResult').text(`Conversion result from USD to ${country} is: ${response.conversion_result}`)
+    $('.conversionResult').text(`Conversion result from USD to ${response.target_code} is: ${response.conversion_result}`);
   } else {
-    $('.error')
+    $('.error').text(`There was an error: ${response}`); 
   }
 } 
 
