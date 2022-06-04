@@ -9,22 +9,26 @@
 <body>
   <div class="container">
     <div class="header">
-      <h1>monetXchange</h1>
-      <p>Gather up the coins and xchange while the gettin is good.</p>
+      <h1><span id="title">monet</span> <span style="color:green;">X</span> <span id="title">change</span></h1>
+      <p><i>Gather up the coins and xchange while the gettin is good.</i></p>
     </div>
     <div class="userInfo">
       <form class="monetForm">
-        <select name="currency" id="currency">
-          <option value="CLP">Chilean Peso</option>
-          <option value="THB">Thai Baht</option>
-          <option value="HTG">Haitian Gourde</option>
-          <option value="FJD">Fiji Dollar</option>
-          <option value="BTN">Bhutanese Ngultrum</option>
-          <option value="other">Other</option>
-        </select>
-        <label for="amount">Amount to convert in USD</label>
-        <input type="number" class="amount" required>
-        <button class="btn-danger">Submit</button>
+        <div class="form-group">
+          <select name="currency" id="currency" class="form-control">
+            <option value="CLP">Chilean Peso</option>
+            <option value="THB">Thai Baht</option>
+            <option value="HTG">Haitian Gourde</option>
+            <option value="FJD">Fiji Dollar</option>
+            <option value="BTN">Bhutanese Ngultrum</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount to convert in USD</label><br>
+          <input type="number" class="amount" placeholder="amount in USD" required>
+        </div>
+        <button class="btn-outline-success btn-lg">Submit</button>
       </form>
     </div>
     <div class="output">
@@ -32,11 +36,11 @@
       <p><span class="conversionResult"></span></p>
     </div>
     <div>
-      <p><span class="invalidNumber"></span></p>
-      <p><span class="invalidCurrency"></span></p>
+      <p><span class="invalidNumber alert-warning"></span></p>
+      <p><span class="invalidCurrency alert-warning"></span></p>
     </div>
     <div class="errorMsg">
-      <p><span class="error"></span></p>
+      <p><span class="error alert-warning"></span></p>
     </div>
   </div>
 </body>
