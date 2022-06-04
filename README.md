@@ -47,7 +47,7 @@ If the query response doesn't include that particular currency, the application 
 * Visit the [ExchangeRate-API](https://www.exchangerate-api.com/) site. Input your email address and click the "Get Free Key" button. 
 * You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "Get Started!"
 * At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for the month.
-
+### Clone project
 * clone repository
 * open in vs code
 * open terminal
