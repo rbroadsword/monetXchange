@@ -72,3 +72,11 @@ button {
 .showOutput p {
   margin: 2rem; 
 }
+.audio {
+  margin: auto; 
+  text-align: center;
+}
+.errorMsg {
+  margin: auto; 
+  text-align: center;
+}

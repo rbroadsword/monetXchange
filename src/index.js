@@ -29,11 +29,15 @@ $(document).ready(function() {
       $('.output').hide(); 
       $('.error').hide(); 
       $('.invalidNumber').text(`Error! Enter a number greater than 0`); 
+    } else {
+      $('.invalidNumber').text(""); 
     }
     if (country === 'other'){
       $('.output').hide(); 
       $('.error').hide(); 
       $('.invalidCurrency').text(`Error! Please select a legitamite currency`); 
+    } else {
+      $('.invalidCurrency').text(""); 
     }
     Monet.getMonet(country, amount)
       .then(function(response) {
