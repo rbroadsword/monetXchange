@@ -19,11 +19,54 @@ body {
   font-size: 5rem;
 }
 .userInfo {
+  background-image: url("../assets/img/xchange.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   padding: 2rem;
   margin: 2rem;
   text-align: left;
-  width: fit-content;
   background-color:ivory;
   border: solid green;
   border-radius: .25rem;
+}
+.monetForm {
+  background-color: #ffffff;
+  opacity: 0.75;
+  color: green;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  border: solid green;
+  border-radius: .25rem;
+}
+label, input, button, select {
+  padding: 1rem;
+  text-align: center;
+}
+button {
+  margin-bottom: 1rem;
+}
+.output {
+  display: none;
+  background-image: url("../assets/img/xchange.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 2rem;
+  margin: 2rem;
+  background-color:ivory;
+  border: solid green;
+  border-radius: .25rem;
+}
+.showOutput {
+  background-color: #ffffff;
+  opacity: 0.75;
+  color: green;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  border: solid green;
+  border-radius: .25rem;
+}
+.showOutput p {
+  margin: 2rem; 
 }

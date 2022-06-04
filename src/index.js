@@ -8,8 +8,10 @@ import Monet from './js/function.js';
 function clearForm(){
   $('.amount').val(""); 
 }
+
 function getElements(response){
   if (response.result === "success") {
+    $('.output').show(); 
     $('.conversionRate').text(`The coversion rate is: ${response.conversion_rate}`); 
     $('.conversionResult').text(`Conversion result from USD to ${response.target_code} is: ${response.conversion_result}`);
   } else {

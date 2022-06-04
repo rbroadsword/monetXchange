@@ -15,6 +15,7 @@
     <div class="userInfo">
       <form class="monetForm">
         <div class="form-group">
+          <label for="currency">Choose concurrency to convert to:</label><br>
           <select name="currency" id="currency" class="form-control">
             <option value="CLP">Chilean Peso</option>
             <option value="THB">Thai Baht</option>
@@ -32,8 +33,10 @@
       </form>
     </div>
     <div class="output">
-      <p><span class="conversionRate"></span></p>
-      <p><span class="conversionResult"></span></p>
+      <div class="showOutput">
+        <p><span class="conversionRate"></span></p>
+        <p><span class="conversionResult"></span></p>
+      </div>
     </div>
     <div>
       <p><span class="invalidNumber alert-warning"></span></p>
