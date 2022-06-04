@@ -10,17 +10,17 @@ function clearForm(){
 }
 
 function getElements(response){
-  if (response.result === "success") {
+  if (response instanceof Error === false) {
     $('.output').show(); 
     $('.conversionRate').text(`The coversion rate is: ${response.conversion_rate}`); 
     $('.conversionResult').text(`Conversion result from USD to ${response.target_code} is: ${response.conversion_result}`);
   } else {
-    $('.error').text(`There was an error: ${response}`); 
+    $('.error').text(`There was an error: ${response["error-type"]}`); 
   }
 } 
 
 $(document).ready(function() {
-  $('.monetForm').click(function() {
+  $('.monetForm').submit(function() {
     event.preventDefault(); 
     let country = $('#currency').val(); 
     let amount = parseInt($('.amount').val()); 

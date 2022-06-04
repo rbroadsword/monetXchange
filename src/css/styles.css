@@ -52,7 +52,7 @@ button {
   display: none;
   background-image: url("../assets/img/xchange.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size:cover;
   padding: 2rem;
   margin: 2rem;
   background-color:ivory;

@@ -62,7 +62,8 @@ If the query response doesn't include that particular currency, the application 
 
 ## Known Bugs
 
-* CORS 
+* Error message is undefined
+* Background music 404 not found
 
 ## License
 
