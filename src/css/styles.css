@@ -82,8 +82,21 @@ button {
 }
 .animation {
   margin: auto;
+  width: 100%;
+  border-top: solid green;
+  border-bottom: solid green;
+  
+  background-image: url('../assets/img/nyc-bb.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
   display: block;
   position: relative; 
+  
+}
+.animation img {
+  width: 50%; 
+  height: 50%;
+  position: relative;
   animation: move 5s infinite alternate;
   animation-timing-function: ease-in;
 }
