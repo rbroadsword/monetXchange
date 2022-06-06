@@ -80,3 +80,29 @@ button {
   margin: auto; 
   text-align: center;
 }
+.animation {
+  margin: auto;
+  display: block;
+  background-color: gold;
+  border-top: double green .4rem;
+  border-bottom: dotted darkgoldenrod;
+  border-right: dotted darkgoldenrod;
+  border-left: dotted darkgoldenrod;
+  position: relative; 
+  width: 7rem;
+  height: 3rem;
+  animation: move 5s infinite alternate;
+  animation-timing-function: ease-in;
+}
+.animation p {
+  margin-top: .5rem;
+  color: white;
+	font-size: 1.5rem; 
+	-webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 2px 3px 5px green;
+}
+
+@keyframes move {
+  from {left: -300px;}
+  to {left: 300px;}
+}
