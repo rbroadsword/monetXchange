@@ -9,13 +9,13 @@ function clearForm(){
   $('.amount').val(""); 
 }
 
-function getElements(response){
+function getElements(response){ 
   if (response instanceof Error === false) {
     $('.output').show(); 
     $('.conversionRate').text(`The coversion rate is: ${response.conversion_rate}`); 
     $('.conversionResult').text(`Conversion result from USD to ${response.target_code} is: ${response.conversion_result}`);
   } else {
-    $('.error').text(`There was an error: ${response["error-type"]}`); 
+    $('.error').text(`There was an error: ${response}`); 
   }
 } 
 
