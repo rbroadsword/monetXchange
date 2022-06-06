@@ -83,14 +83,7 @@ button {
 .animation {
   margin: auto;
   display: block;
-  background-color: gold;
-  border-top: double green .4rem;
-  border-bottom: dotted darkgoldenrod;
-  border-right: dotted darkgoldenrod;
-  border-left: dotted darkgoldenrod;
   position: relative; 
-  width: 7rem;
-  height: 3rem;
   animation: move 5s infinite alternate;
   animation-timing-function: ease-in;
 }
