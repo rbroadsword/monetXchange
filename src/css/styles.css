@@ -85,7 +85,7 @@ button {
   width: 100%;
   border-top: solid green;
   border-bottom: solid green;
-  
+  border-radius: .25rem;
   background-image: url('../assets/img/nyc-bb.jpg');
   background-repeat: no-repeat;
   background-size:cover;
